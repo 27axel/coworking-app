@@ -16,13 +16,13 @@ The application allows you to book a room in a network of coworking spaces (СRU
 ## Launch via Docker
 1) Download the project
 2) Open command console and move to the project folder
-3) Use this command to build the image:
+3) Use this command to build the images:
 ```
 docker build -t coworking-app -f Dockerfile .
 ```
-4) Then run the container with the command:
+4) Then run docker-compose using the command:
 ```
-docker-compose up
+docker-compose up -d
 ```
 ## Access the running app
 - [API interaction via Swagger](http://localhost:8080/swagger-ui/index.html#/)
