@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  postgres:
+    image: 'postgres:15'
+    container_name: 'java-postgres'
+    environment:
+      - 'POSTGRES_USER=admin'
+      - 'POSTGRES_PASSWORD=admin'
+      - 'POSTGRES_DB=CoworkingNetwork'
+
+  app:
+    build: ./
+    container_name: 'coworking-app'
+    ports:
+      - 8080:8080
